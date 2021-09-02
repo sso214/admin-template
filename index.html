@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:url" content="https://hexlant.com/recruitment">
     <meta property="og:site_name" content="헥슬란트 - 블록체인 기술연구소"/>
@@ -18,15 +17,14 @@
 <div id="inside"></div>
 
 </body>
-<script>
-<script type="module" src="js/modules/data.js"></script>
+<script type="module" src="./js/modules/data.js"></script>
 <script type="module">
-    import * as Data from 'js/modules/data.js"';
+    import * as Data from './js/modules/data.js';
 
     function changeMeta(data) {
-        $("meta[property='og\\:title']").attr("content", data.title);
-        $("meta[property='og\\:description']").attr("content", data.description);
-        $("meta[property='og\\:image']").attr("content", data.img);
+        document.querySelector('meta[property="og:title"]').setAttribute("content", data.title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", data.description);
+        document.querySelector('meta[property="og:image"]').setAttribute("content", data.img);
     }
 
     const data = Data["inside"]["retin"];
