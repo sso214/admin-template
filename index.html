@@ -17,6 +17,14 @@
 <div id="inside"></div>
 
 </body>
+<script>
+    function changeMeta(data) {
+        document.querySelector('meta[property="og:title"]').setAttribute("content", data.title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", data.description);
+        document.querySelector('meta[property="og:image"]').setAttribute("content", data.img);
+    }
+    changeMeta({title: 'hi', description:'wow', img:''})
+</script>
 <script type="module" src="./js/modules/data.js"></script>
 <script type="module">
     import * as Data from './js/modules/data.js';
