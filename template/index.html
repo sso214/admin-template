@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>어드민 템플릿</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="wrap">
+    <!-- left menu -->
+    <div id="nav">
+        <div id="nav-scroll">
+            <a class="in-block mgl30" href="#"><img class="h17" src="../img/logo-color.png" alt="logo"></a>
+            <div id="nav-menu">
+                <p class="t-black fw-bold">기업명</p>
+                <a href="#">지갑 설정</a>
+                <a href="#">보안 및 권한</a>
+                <a href="#">로그인 내역</a>
+                <p class="f11 letter38 fw-bold mgt30">배분 현황</p>
+                <a href="#" class="active"><i class="material-icons">group_add</i>지갑</a>
+                <a href="#"><i class="material-icons">toc</i>입출금 현황</a>
+                <a href="#"><i class="material-icons">assessment</i>토큰 배분</a>
+                <a href="#"><i class="material-icons">find_in_page</i>검색</a>
+                <a href="#"><i class="material-icons">label_important</i>입금 조회</a>
+                <a href="#"><i class="material-icons rotate180">label_important</i>출금 조회</a>
+                <p class="f11 letter38 fw-bold mgt30">플러그인 서비스</p>
+                <a href="#"><i class="material-icons">emoji_events</i>리워드</a>
+                <a href="#"><i class="material-icons">ballot</i>에어드랍</a>
+            </div>
+            <div id="nav-bottom"></div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <!-- contents header -->
+        <div id="content-header">
+            <div class="content-header-line pdw12">
+                <!-- basic header -->
+                <div class="flex align-center mgb40">
+                    <a class="back-btn" href="javascript:history.back();">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </a>
+                    <h1 class="title">타이틀</h1>
+                    <span class="label gray mgl10">Label</span>
+                    <div class="mgl">
+                        <button class="btn-border-gray mgr10"><i class="material-icons op4 mgr20 f20">create</i>정보수정</button>
+                        <button class="btn-bg-main">배분하기</button>
+                    </div>
+                </div>
+                <!-- input header -->
+                <div class="flex align-center">
+                    <form>
+                        <label><input class="mgr7" type="text" placeholder="검색"></label>
+                        <label>
+                            <select class="mgr7">
+                                <option>전체1</option>
+                                <option>전체2</option>
+                            </select>
+                        </label>
+                        <label>
+                            <select class="mgr7">
+                                <option>전체1</option>
+                                <option>전체2</option>
+                            </select>
+                        </label>
+                        <button class="btn-bg-main">검색</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div id="content-body">
+            <!-- table01 -->
+            <div class="pdw12 pdh37 border-bottom-gray">
+                <h2 class="sub-title mgb25">정보</h2>
+                <table class="table-type01">
+                    <colgroup>
+                        <col width="15%">
+                        <col width="35%">
+                        <col width="15%">
+                        <col width="35%">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>보유수량</th>
+                        <td colspan="3">
+                            <div class="flex align-center">
+                                0x045d2678des961dsds9678ds678f24ce0e
+                                <span class="label gray mgl10 pointer">복사</span>
+                                <div class="label gray mgl10 pointer align-center">
+                                    <span class="color-box mgr7" style="background:#5cc7ff"></span> 프라이빗 2018
+                                </div>
+                                <span class="label blue mgl10 pointer">완료</span>
+                                <span class="label red mgl10 pointer">미완료</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>지급 완료 수량</th>
+                        <td>0 REDi <span class="error mgl20">토큰이 부족합니다.</span></td>
+                        <th>총 입금 수량</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>지급 실패 건</th>
+                        <td>0 REDi</td>
+                        <th>총 입금 수량 </th>
+                        <td>0 / <span class="t-gray300">5,000,000 REDi</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pdw12 pdt25 pdb50 border-bottom-gray">
+                <table class="table-type01">
+                    <colgroup>
+                        <col width="15%">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>메모</th>
+                        <td>
+                            <div class="flex align-center">
+                                락업 3개월 마다 해제 필요
+                                <span class="mgl pointer"><i class="material-icons op4 mgr20 f20">create</i></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- table02 -->
+            <div class="pdh37 border-bottom-gray">
+                <div class="flex align-center mgb25 pdw12">
+                    <h2 class="sub-title">요약</h2>
+                    <ul class="tab01 mgl">
+                        <li class="on">오늘</li>
+                        <li>7일</li>
+                        <li>30일</li>
+                        <li>현재</li>
+                    </ul>
+                </div>
+                <div class="table-type03 mgb45">
+                    <p class="table-type03-head">전체 정보</p>
+                    <ul class="table-type03-body">
+                        <li>
+                            <p>사용 인원</p>
+                            <p>1,457</p>
+                        </li>
+                        <li>
+                            <p>총 보관 수량</p>
+                            <p>975,000,000 REDi</p>
+                        </li>
+                        <li>
+                            <p>누적 입금 물량</p>
+                            <p>375,032,200 REDi</p>
+                        </li>
+                        <li>
+                            <p>누적 출금 물량</p>
+                            <p>7,311,900 REDi</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- table03 -->
+            <div class="flex align-center pdh37 border-bottom-gray">
+                <div class="w46 letter48">
+                    <p class="fw-bold mgb10 pdw12">최대 입금 순</p>
+                    <table class="table-type04">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="30%">
+                            <col width="30%">
+                            <col width="20%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td class="t-black200">1</td>
+                            <td>30,210 REDi</td>
+                            <td>abc@abc.com</td>
+                            <td class="t-right"><label class="mark gray small">Txid</label></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w46 letter48 mgl">
+                    <p class="fw-bold mgb10 pdw12">최대 출금 순</p>
+                    <table class="table-type04">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="30%">
+                            <col width="30%">
+                            <col width="20%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td class="t-black200">1</td>
+                            <td>30,210 REDi</td>
+                            <td>abc@abc.com</td>
+                            <td class="t-right"><label class="mark gray small">Txid</label></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- table04 -->
+            <div class="pdh37">
+                <div class="flex align-center pdw12 mgb20">
+                    <h2 class="f20 letter78 flex align-center">지갑 그룹 목록 <span class="mgl10 label gray fw-medium">1</span></h2>
+                    <div class="mgl">
+                        <button class="btn-border-gray2 mgr10">그룹 바로 지급</button>
+                        <button class="btn-bg-main">그룹 추가</button>
+                    </div>
+                </div>
+                <div class="flex align-center pdw12 mgb20">
+                    <h2 class="f20 letter78 flex align-center">그룹 내 조회</h2>
+                    <div class="mgl">
+                        <form>
+                            <label><input class="mgr7" type="text" placeholder="검색"></label>
+                            <label>
+                                <select class="mgr7">
+                                    <option>전체1</option>
+                                    <option>전체2</option>
+                                </select>
+                            </label>
+                            <label>
+                                <select class="mgr7">
+                                    <option>전체1</option>
+                                    <option>전체2</option>
+                                </select>
+                            </label>
+                            <button class="btn-bg-main">검색</button>
+                        </form>
+                    </div>
+                </div>
+                <table class="table-type02 mgb20">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>카테고리</th>
+                        <th>배분 물량</th>
+                        <th>홀더 수</th>
+                        <th>락업</th>
+                        <th>히스토리</th>
+                        <th>등록일자</th>
+                        <th>토큰</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="color-box" style="background:#5cc7ff"></span></td>
+                        <td>프라이빗 2018</td>
+                        <td>5,000,000 REDi</td>
+                        <td>13명</td>
+                        <td>30일</td>
+                        <td>추가 완료</td>
+                        <td><span class="mark blue">지급</span></td>
+                        <td><span class="mark red">미지급</span></td>
+                    </tr>
+                    <tr class="not-hover">
+                        <td colspan="8">
+                            <div class="t-center pdh80 fw-bold">
+                                <p class="letter48 in-flex align-center mgb3">
+                                    <span class="in-block mgr15">💡</span>
+                                    특정 그룹에게 토큰을 지급하셔야 하나요?
+                                </p>
+                                <p class="letter36 t-gray200">그룹을 추가해주세요</p>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <div>처음으로</div>
+                    <div><i class="material-icons">keyboard_arrow_left</i></div>
+                    <div>1 / 1</div>
+                    <div><i class="material-icons">keyboard_arrow_right</i></div>
+                    <div>마지막으로</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/customSelect.js"></script>
+
+</body>
+</html>

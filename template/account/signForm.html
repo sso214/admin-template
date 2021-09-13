@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>어드민 템플릿</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<div id="wrap">
+    <!-- left menu -->
+    <div id="nav">
+        <div id="nav-scroll">
+            <a class="in-block mgl30" href="#"><img class="h17" src="../../img/logo-color.png" alt="logo"></a>
+            <div id="signup-guide-box">
+                <div class="border-bottom mgb25 flex align-center pdb13">
+                    <span class="mark small wid-auto-s light-blue fw-bold f11 letter38">1 / 3 단계</span>
+                    <img class="mgl-auto h28 radius50p" src="{% static 'company/img/img-sam.png' %}" alt="sam">
+                </div>
+                <p class="f14 fw-bold letter48 line-h165 t-black">
+                    adc@abc.com 님,<br/>가입이 완료되었습니다.<br/>안전한 월렛 사용을 위해<br/>기업 정보를 작성해주세요.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <!-- contents header -->
+        <div id="content-header">
+            <div class="content-header-line pdw12">
+                <h1 class="f28 letter96 mgr15">회원가입</h1>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div id="content-body">
+            <div class="in-block input-signup">
+                <form>
+                    <ul class="type04 mgt30">
+                        <li>
+                            <p>프로젝트 로고</p>
+                            <div class="flex align-center">
+                                <div class="logo-img-box mgr10"></div>
+                                <div class="fb">
+                                    <input type="file">
+                                    <span>x파일 업로드</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>기업명</p>
+                            <div><input type="text" placeholder="기업명"></div>
+                        </li>
+                        <li>
+                            <p>담당부서</p>
+                            <div><input type="text" placeholder="부서명"></div>
+                        </li>
+                        <li>
+                            <p>회사 전화번호</p>
+                            <div><input type="number" placeholder="연결 가능한 회사 번호를 입력하세요"></div>
+                        </li>
+                        <li>
+                            <p>회사 이메일</p>
+                            <div class="mgr20"><input type="email" placeholder="연결 가능한 회사 이메일을 입력하세요"></div>
+                            <div class="f12 letter38">
+                                <div class="rb mgr5">
+                                    <input type="radio" name="radio01">
+                                    <span>광고 수신 미동의</span>
+                                </div>
+                                <div class="rb">
+                                    <input type="radio" name="radio01" checked="checked">
+                                    <span>광고 수신 동의</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="line02 mgh7"></div>
+                    <ul class="type04">
+                        <li>
+                            <p>담당자 성함</p>
+                            <div><input type="text" placeholder="담당자명"></div>
+                        </li>
+                        <li>
+                            <p>담당자 연락처</p>
+                            <div><input type="number" placeholder="연결 가능한 번호를 입력하세요"></div>
+                        </li>
+                    </ul>
+                    <div class="line02 mgh7"></div>
+                    <ul class="type04 mgb30">
+                        <li>
+                            <p>계정 관리</p>
+                            <div class="flex align-center">
+                                <button class="btn-border-black radius3 fw-medium mgr17">비밀번호 변경</button>
+                                <p class="f14 letter36 t-gray">마지막 변경일 2019년 10월 11일 21시 31분</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="flex align-center justify-center">
+                        <button class="btn-bg-white mgr10">취소</button>
+                        <button class="btn-bg-blue">확인</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

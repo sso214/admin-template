@@ -1,0 +1,291 @@
+///* ==========================================================================
+//   bg/Text CSS
+//========================================================================== */
+.bg {
+  &-signBgColor {background-color:$signBgColor}
+  &-signBoxColor {background-color:$signBoxColor}
+  //&-main300 {background:$main300}
+  //&-main400 {background:$main400}
+}
+.t {
+  &-black {color:$black}
+  &-black200 {color:#37352e}
+  &-white {color:$white}
+  &-main {color:$mainColor}
+  &-gray100 {color:$gray100}
+  &-gray200 {color:#adadad}
+  &-gray300 {color:#969696}
+//  //&-white100 {color:$white100}
+//  //&-white200 {color:$white200}
+  &-center {text-align: center}
+  &-right {text-align: right}
+}
+.f {
+  &11 {font-size: 11px}
+  &12 {font-size: 12px}
+  &14 {font-size: 14px}
+  &17 {font-size: 17px}
+  &20 {font-size: 20px}
+  &28 {font-size: 28px}
+  &40 {font-size: 40px}
+}
+.letter {
+  &38 {letter-spacing: -0.38px}
+  &48 {letter-spacing: -0.48px}
+  &54 {letter-spacing: -0.54px}
+  &66 {letter-spacing: -0.66px}
+  &78 {letter-spacing: -0.78px}
+  &94 {letter-spacing: -0.94px}
+  &112 {letter-spacing: -1.12px}
+  &176 {letter-spacing: -1.76px}
+}
+.line {
+  &-h165 {line-height: 33px;}
+}
+.fw {
+  &-exbold {font-weight: 900}
+  &-bold {font-weight: bold}
+  &-medium {font-weight: 500}
+  &-normal {font-weight: 400}
+}
+.radius{
+  &3 {border-radius: 3px;}
+}
+.op {
+  &4 {opacity: .4;}
+}
+
+
+/* ==========================================================================
+   Layout CSS
+========================================================================== */
+.w {
+  &345px {width:345px;}
+  &100 {width:100%;}
+  &50 {width:50%;}
+  &46 {width:46%;}
+}
+.h {
+  &17 {height:17px;}
+}
+.max {
+  &-w460 {max-width:460px;}
+}
+.m {
+  &gb3 {margin-bottom: 3px;}
+  &gb5 {margin-bottom: 5px;}
+  &gb10 {margin-bottom: 10px;}
+  &gb20 {margin-bottom: 20px;}
+  &gb25 {margin-bottom: 25px;}
+//  &gb30 {margin-bottom: 30px;}
+  &gb35 {margin-bottom: 35px;}
+  &gb40 {margin-bottom: 40px;}
+  &gb60 {margin-bottom: 60px;}
+//  //&gb30 {margin-bottom: 30px;}
+//  //&gb35 {margin-bottom: 5px;}
+//  //&gt5 {margin-top: 5px;}
+  //&gt25 {margin-top: 25px;}
+  &gt30 {margin-top: 30px;}
+//  //&gt60 {margin-top: 60px;}
+//  //&gt150 {margin-top: 150px;}
+  &gl {margin-left: auto}
+  &gl10 {margin-left: 10px;}
+  &gl20 {margin-left: 20px;}
+  &gl30 {margin-left: 30px;}
+  &gr7 {margin-right: 7px;}
+  &gr10 {margin-right: 10px;}
+  &gr15 {margin-right: 15px;}
+  &gr20 {margin-right: 20px;}
+}
+.p {
+  //&dt15 {padding-top:15px;}
+  &dt25 {padding-top:25px;}
+//  //&dt120 {padding-top:120px;}
+//  //&db20 {padding-bottom:20px;}
+  &db50 {padding-bottom:50px;}
+//  //&dw20 {padding:{left:20px;right:20px;}}
+//  //&dw15 {padding:{left:15px;right:15px;}}
+  &dl15 {padding-left:15px}
+  &dl10p {padding-left:10%}
+  &dr60 {padding-right:60px}
+  &dw12 {padding:{left:12px;right:12px;}}
+  &dw22 {padding:{left:22px;right:22px;}}
+//  //&dw75 {padding:{left:75px;right:75px;}}
+  &dh17 {padding:{top:17px;bottom:17px;}}
+  &dh20 {padding:{top:20px;bottom:20px;}}
+  &dh37 {padding:{top:37px;bottom:37px;}}
+  &dh40 {padding:{top:40px;bottom:40px;}}
+  &dh80 {padding:{top:80px;bottom:80px;}}
+}
+.block {display: block}
+.inline {display: inline}
+.in-block {display: inline-block}
+.align-center {align-items: center}
+.align-baseline {align-items: baseline}
+.justify-center {justify-content: center}
+.in-flex {display: inline-flex}
+.flex {
+  display: flex;
+  &-column {flex-direction: column}
+  &0 {flex: none}
+  &1 {flex: 1}
+  &3 {flex: 3}
+}
+.left {float: left}
+.right {float: right}
+.clear:after {content: "";display: block;clear: both;}
+.absolute {position: absolute}
+.top0 {top:0}
+.left0 {left:0}
+
+
+/* ==========================================================================
+   Component CSS
+========================================================================== */
+.border {border:1px solid red}
+
+/* label */
+.label {display:inline-flex;padding:2px 7px;border-radius:2px;font-size:11px;letter-spacing:-0.38px}
+.gray {background-color:#efefef}
+.blue {background-color:#e5f4ff;color:#007aff}
+.red {background-color:#fee6eb;color:#f90e3c}
+.color-box {display:block;width:8px;height:8px;border-radius:1px}
+.mark {width:77px;padding:8px 0;font-size:12px;letter-spacing:-0.42px;justify-content:center;align-items:center;font-weight:bold;display:inline-flex;border-radius:2px}
+.mark.small {width:52px;padding:2px 0;font-size:11px;letter-spacing:-0.38px}
+//.mark.wid-auto {width:auto;padding:2px 8px}
+//.mark.wid-auto-s {width:auto;padding:2px 5px}
+//.mark.blue {background:#e5f4ff;color:#007aff}
+//.mark.light-blue {background:#deeeff;color:#007aff;}
+//.mark.red {background:#fee6eb;color:#f90e3c}
+//.mark.gray {background:#efefef;color:#37352e}
+//
+/* ect button */
+.back-btn {display:inline-flex;width:32px;height:32px;background:#fafafa;border:1px solid #dedede;border-radius:50%;align-items:center;justify-content:center;font-size:24px;transition:all .2s;margin-right:17px}
+.back-btn:hover {background:#f7f7f7}
+.back-btn:active {background:#dedede}
+//
+/* basic button */
+button,
+.btn {cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;border-radius:2px;min-width:128px;height:44px;transition:all .2s}
+.btn-border-gray {background:#fcfcfc;border:2px solid #f2f2f2;color:#828282}
+.btn-border-gray2 {background:#fff;border:1px solid #dfdfdf;color:#000}
+.btn-bg-main {background:#007aff;color:#fff}
+.btn-h58 {height:58px}
+//
+///* ==========================================================================
+//   Title CSS
+//========================================================================== */
+.title {font-size:28px;letter-spacing:-0.94px}
+.sub-title {font-size:20px;letter-spacing:-0.78px;}
+
+/* tab */
+.tab01 {padding:4px;background:#f0f0f0;display:flex;border-radius:8px;box-shadow:inset 0 0 1px 0 rgba(0, 0, 0, 0.1)}
+.tab01 li {padding:8px 40px;position:relative;border-radius:5px;color:#6f6f6f;cursor:pointer;font-weight:bold;font-size:13px;letter-spacing:-0.44px;transition:all .2s}
+.tab01 li.on {background:#fff;color:#2b2b2b}
+.tab01 li:after {content: "";display:block;width:1px;height:18px;background:#d7d7d6;position:absolute;top:0;right:0;transform:translateY(50%)}
+.tab01 li:last-child:after,
+.tab01 li.on:after {display:none}
+//.tab01 li:not(.on):hover {background: rgba(0, 0, 0, 0.03)}
+//.tab02 {display:flex;font-size:20px;letter-spacing:-0.68px;font-weight:bold;color:#333}
+//.tab02 li {margin-right:11px;opacity:.5;transition:all .2s;padding:4px 11px;border-radius:5px;cursor:pointer}
+//.tab02 li.on {background:rgba(239, 239, 239, 0.6);opacity:1}
+
+/* ==========================================================================
+   Table CSS
+========================================================================== */
+table {table-layout: fixed;width:100%;border-collapse:initial}
+.table-type01 th {color:#7f7f7f}
+.table-type01 td {color:#37352e}
+.table-type01 th,
+.table-type01 td {text-align:left;font-size:14px;font-weight:500;padding:11px 0;letter-spacing:-0.48px;}
+.table-type02 {border-radius:3px;border:2px solid #efefef;text-align:left;font-weight:500}
+.table-type02 th {font-weight:500;font-size:13px;letter-spacing:-0.44px;background-color:#efefef;padding:11px 5px;cursor:default}
+.table-type02 td {font-size:14px;letter-spacing:-0.48px;padding:7px 5px;height:41px;}
+.table-type02 tr:not(.not-hover) {cursor:pointer;transition:all .2s}
+.table-type02 tr:not(.not-hover):hover {background:#f7f7f7}
+.table-type02 th:first-child,
+.table-type02 td:first-child {padding-left:30px}
+.table-type02 th:last-child,
+.table-type02 td:last-child {padding-right:30px}
+.table-type03 {border:2px solid #efefef;border-radius:3px;overflow:hidden}
+.table-type03-head {font-weight:bold;font-size:13px;letter-spacing:-0.44px;padding:11px 32px;background:#efefef;color:#2b2b2b}
+.table-type03-body:after {content:"";display: block;clear:both}
+.table-type03-body li {float:left;width:20%;padding:32px;transition:all .2s}
+.table-type03-body li:hover {background:#f7f7f7}
+.table-type03-body li p:first-child {font-size:12px;letter-spacing:-0.42px;color: rgba(0, 0, 0, 0.5);margin-bottom:5px;font-weight:500}
+.table-type03-body li p:last-child {font-size:17px;letter-spacing:-0.58px;font-weight:500}
+.table-type04 {color:#6f6f6f;font-weight:500}
+.table-type04 tr {transition: all .2s}
+.table-type04 tr:hover {background:#f7f7f7;cursor:pointer}
+.table-type04 td {padding:14px 10px;border-bottom:2px solid $lineColor}
+
+
+.border-bottom-gray {border-bottom:2px solid $lineColor}
+.error {font-size:12px;font-weight:bold;letter-spacing:-0.42px;color:$errorColor;vertical-align:baseline}
+.pointer {cursor:pointer}
+
+
+
+.pagination {text-align:center}
+.pagination > div {font-size:14px;font-weight:500;letter-spacing:-0.48px;display:inline-flex;border:1px solid #dedede;border-radius:2px;height:44px;justify-content:center;align-items:center;cursor:pointer;margin:0 5px;transition:all .2s}
+.pagination > div:hover {background:#f7f7f7}
+.pagination > div:active {background:#dedede}
+.pagination > div:first-child,
+.pagination > div:last-child {width:128px}
+.pagination > div:nth-child(2),
+.pagination > div:nth-child(4) {width:48px}
+.pagination > div:nth-child(3) {min-width:128px;padding:0 20px;margin:0 13px;font-weight:bold}
+
+/* ==========================================================================
+   Input CSS
+========================================================================== */
+input::placeholder {color:$placeHolder}
+input::-webkit-input-placeholder {color:$placeHolder}
+input:-ms-input-placeholder {color:$placeHolder}
+input::-ms-clear {display:none}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;-moz-appearance:none}
+input[type=number] {-moz-appearance:textfield}
+input {width:345px;}
+input,
+select {color:#6f6f6f;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;line-height:1.5;border:2px solid #efefef;border-radius:2px;padding:11px 18px;background:#fcfcfc;font-weight:bold;font-size:12px;letter-spacing:-0.36px;transition:all .2s}
+input:hover,
+select:hover {background:#f7f7f7;}
+input:focus,
+select:focus {border:2px solid #a4a4a4;background:#fcfcfc}
+select {min-width:130px;background-image:url("../img/select-icon.png")!important;background-repeat:no-repeat!important;background-position:center right 18px!important;background-size:9px 6px!important;padding-right:35px}
+.input-type02 input,
+.input-type02 select {width:100%;background:#fff;border:1px solid #e1e1e1;font-size:14px;letter-spacing:-0.54px;font-weight:normal}
+.input-type02 input:hover,
+.input-type02 select:hover {background:#fff;}
+.input-type02 input:focus,
+.input-type02 select:focus {border:1px solid #006afa}
+
+
+
+
+
+/* custom select */
+//.custom-select {min-width:130px;position:relative;display:inline-block;color:$selectColor;letter-spacing:-0.36px;font-weight:500;-ms-user-select:none;-webkit-user-select: none;user-select:none;
+//  select {display:none}
+//}
+//.select-selected {
+//  display:flex;align-items:center;cursor:pointer;padding:0 15px;font-size:12px;font-weight:bold;height:44px;background:#fcfcfc;border:2px solid #efefef;transition:all .2s;border-radius:2px;
+//  &.select-arrow-active {border:2px solid #a4a4a4;background:#fcfcfc}
+//  &:hover {background:#f7f7f7}
+//}
+//.select-items {
+//  position:absolute;top:100%;margin-top:4px;left:0;right:0;z-index: 99;max-height:140px;overflow-y:scroll;box-shadow: 0 0 2px 0 rgba(176, 176, 176, 0.5);border-radius:4px;
+//  div {
+//    display:flex;align-items:center;cursor:pointer;padding:10px 15px;font-size:14px;transition:all .2s;
+//    &:nth-child(odd) {background:#f7f7f7}
+//    &:nth-child(2n) {background:#fff}
+//    &:hover {background:#dedede}
+//  }
+//}
+//.select-hide {display:none}
+//.same-as-selected {
+//  color:#2b2b2b;
+//  &:after {flex:none;margin-left:auto;content:"";display:block;width:10px;height:12px;background:url("../img/select-item-icon.png") no-repeat center;background-size:cover}
+//}
+//.select-selected:after {flex:none;margin-left:auto;content:"";width:9px;height:6px;top:11px;right:18px;background:url("../img/select-icon.png") no-repeat center;background-size:cover}

@@ -1,0 +1,120 @@
+@import "color";
+@import "basic";
+
+html, body {
+  width: 100%;
+  min-width: 1600px;
+  position: relative;
+  font-size:14px;
+}
+
+#wrap {
+  display: flex;
+  height: 100%;
+}
+
+#nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  z-index: 99;
+  padding: {
+    top: 40px;
+    bottom: 20px;
+  }
+  background: $navBgColor;
+  border-right: 1px solid $navLineColor;
+  color: $navTextColor;
+  font-size: 14px;
+  letter-spacing: -0.48px;
+  overflow-y: scroll;
+}
+
+#nav-scroll {
+  position: relative;
+  min-height: 800px;
+  height: 100%;
+  padding-bottom: 240px;
+}
+
+#nav-menu {
+  p {
+    padding: 10px 0 10px 30px;
+    margin-top: 30px;
+  }
+  a {
+    display: block;
+    padding: 10px 0 10px 30px;
+    font-weight: 500;
+    transition: background-color, color .2s;
+    position: relative;
+    &.active:after {
+      content: "";
+      display: block;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      background:$navHoverColor;
+    }
+    &:hover {
+      background: $navHoverColor;
+      color: $black;
+      font-weight: bold;
+    }
+  }
+  i {
+    margin-right:16px;
+  }
+}
+
+#nav-bottom {
+  width: 26px;
+  height: 26px;
+  background: $navBottomColor;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content-header {
+  flex: none;
+  width: 100%;
+  background: $white;
+  padding-left: 280px;
+  padding-right: 40px;
+}
+
+.content-header-line {
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom:35px;
+  border-bottom: 2px solid $lineColor;
+}
+
+#content-body {
+  padding: 0 40px 100px 280px;
+  flex: 1;
+  overflow: scroll;
+}
+
+#signup-guide-box {
+  background: #fff;
+  margin-left: 12px;
+  margin-right: 9px;
+  min-height: 196px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.03);
+  padding: 19px 15px;
+}
